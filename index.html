@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Roommate Sync – Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="rs-body rs-body-auth">
+  <div class="rs-page-shell">
+
+    <!-- HEADER -->
+    <header class="rs-header">
+      <div class="rs-header-inner">
+        <a href="index.html" class="rs-logo">
+          <div class="rs-logo-mark">RS</div>
+          <div class="rs-logo-text">
+            <span class="rs-logo-name">Roommate Sync</span>
+            <span class="rs-logo-tagline">Aligned living, without the guesswork</span>
+          </div>
+        </a>
+
+        <nav class="rs-nav">
+          <button class="rs-nav-link rs-nav-link-active" data-nav="auth">Login</button>
+          <button class="rs-nav-link" data-nav="quiz">Questionnaire</button>
+          <button class="rs-nav-link" data-nav="results">Results</button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="rs-main rs-auth-layout">
+
+      <!-- LEFT SIDE (BRAND / STORY) -->
+      <section class="rs-auth-hero">
+        <div class="rs-auth-hero-gradient"></div>
+        <div class="rs-auth-hero-content">
+          <h1 class="rs-hero-title">
+            Find a roommate who actually fits your life.
+          </h1>
+          <p class="rs-hero-subtitle">
+            Roommate Sync helps students avoid daily conflicts by matching
+            real lifestyle habits — before moving in.
+          </p>
+
+          <ul class="rs-hero-highlights">
+            <li>Sleep timing, food, cleanliness & budget</li>
+            <li>Designed for students & shared living</li>
+            <li>Powered by secure Google Firebase</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- RIGHT SIDE (LOGIN CARD) -->
+      <section class="rs-auth-card-wrapper">
+        <div class="rs-auth-card">
+
+          <h2 class="rs-auth-title">Get started</h2>
+          <p class="rs-auth-subtitle">
+            Login or create an account to continue
+          </p>
+
+          <!-- FORM (CONNECTED TO JS) -->
+          <form class="rs-auth-form" id="authForm">
+
+            <div class="rs-field">
+              <label for="authEmail" class="rs-label">Email</label>
+              <input
+                type="email"
+                id="authEmail"
+                class="rs-input"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+
+            <div class="rs-field">
+              <label for="authPassword" class="rs-label">Password</label>
+              <input
+                type="password"
+                id="authPassword"
+                class="rs-input"
+                placeholder="Minimum 6 characters"
+                required
+              />
+            </div>
+
+            <button
+              type="submit"
+              class="rs-button rs-button-primary rs-button-full"
+            >
+              Continue
+            </button>
+
+          </form>
+
+          <p class="rs-auth-footnote">
+            By continuing, you agree to use Roommate Sync responsibly.
+          </p>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="rs-footer">
+      <div class="rs-footer-inner">
+        <span class="rs-footer-text">
+          © <span id="rsYear"></span> Roommate Sync
+        </span>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- SCRIPT -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>

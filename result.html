@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Roommate Sync – Compatibility Results</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="rs-body rs-body-result">
+  <div class="rs-page-shell">
+
+    <!-- Header -->
+    <header class="rs-header">
+      <div class="rs-header-inner">
+        <a href="index.html" class="rs-logo">
+          <div class="rs-logo-mark">RS</div>
+          <div class="rs-logo-text">
+            <span class="rs-logo-name">Roommate Sync</span>
+            <span class="rs-logo-tagline">Aligned living, without the guesswork.</span>
+          </div>
+        </a>
+        <nav class="rs-nav">
+          <button class="rs-nav-link" data-nav="auth">Login</button>
+          <button class="rs-nav-link" data-nav="quiz">Questionnaire</button>
+          <button class="rs-nav-link rs-nav-link-active">Results</button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="rs-main rs-result-layout">
+
+      <!-- LEFT: SCORE -->
+      <section class="rs-result-left">
+        <h1 class="rs-result-title">Your Compatibility Snapshot</h1>
+
+        <div class="rs-score-wrapper">
+          <svg class="rs-score-ring-svg" viewBox="0 0 120 120">
+            <circle class="rs-score-ring-track" cx="60" cy="60" r="52" />
+            <circle
+              class="rs-score-ring-indicator"
+              cx="60"
+              cy="60"
+              r="52"
+              id="scoreRingIndicator"
+            />
+          </svg>
+
+          <div class="rs-score-center">
+            <span class="rs-score-percentage" id="scorePercentage">0%</span>
+            <span class="rs-score-label">Overall fit</span>
+          </div>
+        </div>
+
+        <div class="rs-score-meta">
+          <span class="rs-score-chip" id="matchQualityLabel">Calculating</span>
+          <p class="rs-score-message" id="scoreMessage">
+            Analyzing your lifestyle alignment…
+          </p>
+        </div>
+
+        <button class="rs-button rs-button-ghost" data-nav="quiz">
+          Edit answers
+        </button>
+      </section>
+
+      <!-- RIGHT: BREAKDOWN -->
+      <section class="rs-result-right">
+
+        <div class="rs-dimension-card">
+          <h3>Sleep</h3>
+          <p class="rs-dimension-score" id="dimensionSleepScore"></p>
+          <p class="rs-dimension-text" id="dimensionSleepText"></p>
+        </div>
+
+        <div class="rs-dimension-card">
+          <h3>Food</h3>
+          <p class="rs-dimension-score" id="dimensionFoodScore"></p>
+          <p class="rs-dimension-text" id="dimensionFoodText"></p>
+        </div>
+
+        <div class="rs-dimension-card">
+          <h3>Cleanliness</h3>
+          <p class="rs-dimension-score" id="dimensionCleanScore"></p>
+          <p class="rs-dimension-text" id="dimensionCleanText"></p>
+        </div>
+
+        <div class="rs-dimension-card">
+          <h3>Budget</h3>
+          <p class="rs-dimension-score" id="dimensionBudgetScore"></p>
+          <p class="rs-dimension-text" id="dimensionBudgetText"></p>
+        </div>
+
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="rs-footer">
+      <div class="rs-footer-inner">
+        <span class="rs-footer-text">
+          Use this snapshot to start meaningful roommate conversations.
+        </span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>

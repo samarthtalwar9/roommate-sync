@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Roommate Sync – Lifestyle Questionnaire</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="rs-body rs-body-quiz">
+  <div class="rs-page-shell">
+
+    <!-- Header -->
+    <header class="rs-header">
+      <div class="rs-header-inner">
+        <a href="index.html" class="rs-logo">
+          <div class="rs-logo-mark">RS</div>
+          <div class="rs-logo-text">
+            <span class="rs-logo-name">Roommate Sync</span>
+            <span class="rs-logo-tagline">Aligned living, without the guesswork.</span>
+          </div>
+        </a>
+        <nav class="rs-nav">
+          <button class="rs-nav-link" data-nav="auth">Login</button>
+          <button class="rs-nav-link rs-nav-link-active" data-nav="quiz">Questionnaire</button>
+          <button class="rs-nav-link" data-nav="results">Results</button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="rs-main rs-quiz-layout">
+
+      <!-- Sidebar -->
+      <aside class="rs-quiz-sidebar">
+        <div class="rs-quiz-sidebar-inner">
+          <h1 class="rs-quiz-title">Map your everyday rhythm</h1>
+          <p class="rs-quiz-subtitle">
+            Answer honestly. There are no right answers — only compatible ones.
+          </p>
+
+          <div class="rs-progress">
+            <div class="rs-progress-header">
+              <span>Progress</span>
+              <span id="quizProgressValue">0%</span>
+            </div>
+            <div class="rs-progress-track">
+              <div class="rs-progress-bar" id="quizProgressBar"></div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Questionnaire -->
+      <section class="rs-quiz-content">
+        <form id="quizForm" class="rs-quiz-form">
+
+          <!-- STEP 1 -->
+          <div class="rs-quiz-step rs-quiz-step-active">
+            <h2 class="rs-quiz-step-title">When do you usually sleep?</h2>
+            <div class="rs-quiz-options-grid">
+              <label class="rs-option-card">
+                <input type="radio" name="sleepTiming" value="early" class="rs-option-input" />
+                <span>Early sleeper (before 11 PM)</span>
+              </label>
+              <label class="rs-option-card">
+                <input type="radio" name="sleepTiming" value="late" class="rs-option-input" />
+                <span>Late sleeper (after midnight)</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="rs-quiz-step">
+            <h2 class="rs-quiz-step-title">Food preference at home?</h2>
+            <div class="rs-quiz-options-grid">
+              <label class="rs-option-card">
+                <input type="radio" name="foodPreference" value="veg" class="rs-option-input" />
+                <span>Vegetarian</span>
+              </label>
+              <label class="rs-option-card">
+                <input type="radio" name="foodPreference" value="non-veg" class="rs-option-input" />
+                <span>Non-vegetarian friendly</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- STEP 3 -->
+          <div class="rs-quiz-step">
+            <h2 class="rs-quiz-step-title">Cleanliness level?</h2>
+            <div class="rs-quiz-options-grid">
+              <label class="rs-option-card">
+                <input type="radio" name="cleanlinessLevel" value="low" class="rs-option-input" />
+                <span>Relaxed</span>
+              </label>
+              <label class="rs-option-card">
+                <input type="radio" name="cleanlinessLevel" value="medium" class="rs-option-input" />
+                <span>Balanced</span>
+              </label>
+              <label class="rs-option-card">
+                <input type="radio" name="cleanlinessLevel" value="high" class="rs-option-input" />
+                <span>Very tidy</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- STEP 4 -->
+          <div class="rs-quiz-step">
+            <h2 class="rs-quiz-step-title">Monthly rent comfort?</h2>
+            <div class="rs-quiz-options-grid">
+              <label class="rs-option-card">
+                <input type="radio" name="budgetComfort" value="low" class="rs-option-input" />
+                <span>Budget-first</span>
+              </label>
+              <label class="rs-option-card">
+                <input type="radio" name="budgetComfort" value="medium" class="rs-option-input" />
+                <span>Balanced</span>
+              </label>
+              <label class="rs-option-card">
+                <input type="radio" name="budgetComfort" value="high" class="rs-option-input" />
+                <span>Premium OK</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <div class="rs-quiz-footer">
+            <div id="quizStatus" class="rs-form-status"></div>
+            <div class="rs-quiz-footer-controls">
+              <button type="button" id="quizBackButton" class="rs-button rs-button-ghost">Back</button>
+              <button type="button" id="quizNextButton" class="rs-button rs-button-primary">Next</button>
+            </div>
+          </div>
+
+        </form>
+      </section>
+    </main>
+
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

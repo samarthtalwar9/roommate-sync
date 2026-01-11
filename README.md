@@ -129,4 +129,5 @@ GitHub automatically renders images inside README.
 
 
 👥 Team – Tech Titans
+
 Team Leader:- Samarth Talwar

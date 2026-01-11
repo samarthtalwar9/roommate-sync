@@ -1,110 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Roommate Sync – Compatibility Results</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compatibility Analysis | Roommate Sync</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
 </head>
+<body class="page-result">
+    <div class="bg-layer">
+        <div class="orb orb-1 position-alt-3"></div>
+        <div class="orb orb-2 position-alt-2"></div>
+        <div class="grid-overlay"></div>
+    </div>
 
-<body class="rs-body rs-body-result">
-  <div class="rs-page-shell">
+    <nav class="navbar glass-panel">
+        <div class="nav-container">
+            <a href="index.html" class="brand-logo">
+                <span class="brand-text">Roommate Sync</span>
+            </a>
+            <div class="user-profile">
+                <div class="user-avatar">JD</div>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Header -->
-    <header class="rs-header">
-      <div class="rs-header-inner">
-        <a href="index.html" class="rs-logo">
-          <div class="rs-logo-mark">RS</div>
-          <div class="rs-logo-text">
-            <span class="rs-logo-name">Roommate Sync</span>
-            <span class="rs-logo-tagline">Aligned living, without the guesswork.</span>
-          </div>
-        </a>
-        <nav class="rs-nav">
-          <button class="rs-nav-link" data-nav="auth">Login</button>
-          <button class="rs-nav-link" data-nav="quiz">Questionnaire</button>
-          <button class="rs-nav-link rs-nav-link-active">Results</button>
-        </nav>
-      </div>
-    </header>
+    <main class="result-dashboard">
+        
+        <header class="result-header">
+            <h1 class="headline-lg">Analysis Complete</h1>
+            <p class="hero-subtext">We've compared your lifestyle profile against 14,203 active users in your area.</p>
+        </header>
 
-    <!-- MAIN -->
-    <main class="rs-main rs-result-layout">
+        <div class="analytics-grid">
+            
+            <div class="glass-card score-card">
+                <h2 class="card-title">Compatibility Score</h2>
+                
+                <div class="score-ring-container">
+                    <svg class="score-ring" viewBox="0 0 120 120">
+                        <circle class="ring-track" cx="60" cy="60" r="54" />
+                        <circle class="ring-progress" id="scoreCircle" cx="60" cy="60" r="54" />
+                    </svg>
+                    <div class="score-value">
+                        <span id="scoreNumber">0</span>%
+                    </div>
+                </div>
 
-      <!-- LEFT: SCORE -->
-      <section class="rs-result-left">
-        <h1 class="rs-result-title">Your Compatibility Snapshot</h1>
+                <div class="match-status-badge success">
+                    <span class="status-dot"></span>
+                    Excellent Match Potential
+                </div>
 
-        <div class="rs-score-wrapper">
-          <svg class="rs-score-ring-svg" viewBox="0 0 120 120">
-            <circle class="rs-score-ring-track" cx="60" cy="60" r="52" />
-            <circle
-              class="rs-score-ring-indicator"
-              cx="60"
-              cy="60"
-              r="52"
-              id="scoreRingIndicator"
-            />
-          </svg>
+                <p class="score-desc">
+                    You align perfectly with the <strong>"Quiet Professional"</strong> demographic.
+                </p>
+            </div>
 
-          <div class="rs-score-center">
-            <span class="rs-score-percentage" id="scorePercentage">0%</span>
-            <span class="rs-score-label">Overall fit</span>
-          </div>
+            <div class="insights-container">
+                
+                <div class="glass-card insight-card">
+                    <div class="insight-header">
+                        <div class="icon-box blue">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                        </div>
+                        <h3>Sleep Sync</h3>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-fill" style="width: 92%"></div>
+                    </div>
+                    <p class="insight-text">92% Match. Your circadian rhythms are highly compatible.</p>
+                </div>
+
+                <div class="glass-card insight-card">
+                    <div class="insight-header">
+                        <div class="icon-box green">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M19.07 4.93 4.93 19.07"/></svg>
+                        </div>
+                        <h3>Dietary Prefs</h3>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-fill" style="width: 85%"></div>
+                    </div>
+                    <p class="insight-text">85% Match. Shared preference for home cooking.</p>
+                </div>
+
+                <div class="glass-card insight-card">
+                    <div class="insight-header">
+                        <div class="icon-box purple">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h3>Cleanliness</h3>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-fill" style="width: 98%"></div>
+                    </div>
+                    <p class="insight-text">98% Match. Critical alignment on tidiness standards.</p>
+                </div>
+
+                <div class="glass-card insight-card">
+                    <div class="insight-header">
+                        <div class="icon-box orange">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2" /><line x1="2" y1="10" x2="22" y2="10" /></svg>
+                        </div>
+                        <h3>Budgeting</h3>
+                    </div>
+                    <div class="bar-container">
+                        <div class="bar-fill" style="width: 74%"></div>
+                    </div>
+                    <p class="insight-text">74% Match. Slight variance in utility spending preferences.</p>
+                </div>
+
+            </div>
         </div>
 
-        <div class="rs-score-meta">
-          <span class="rs-score-chip" id="matchQualityLabel">Calculating</span>
-          <p class="rs-score-message" id="scoreMessage">
-            Analyzing your lifestyle alignment…
-          </p>
+        <div class="cta-section">
+            <button class="btn btn-primary btn-lg shine-effect">Find Compatible Roommates</button>
         </div>
 
-        <button class="rs-button rs-button-ghost" data-nav="quiz">
-          Edit answers
-        </button>
-      </section>
-
-      <!-- RIGHT: BREAKDOWN -->
-      <section class="rs-result-right">
-
-        <div class="rs-dimension-card">
-          <h3>Sleep</h3>
-          <p class="rs-dimension-score" id="dimensionSleepScore"></p>
-          <p class="rs-dimension-text" id="dimensionSleepText"></p>
-        </div>
-
-        <div class="rs-dimension-card">
-          <h3>Food</h3>
-          <p class="rs-dimension-score" id="dimensionFoodScore"></p>
-          <p class="rs-dimension-text" id="dimensionFoodText"></p>
-        </div>
-
-        <div class="rs-dimension-card">
-          <h3>Cleanliness</h3>
-          <p class="rs-dimension-score" id="dimensionCleanScore"></p>
-          <p class="rs-dimension-text" id="dimensionCleanText"></p>
-        </div>
-
-        <div class="rs-dimension-card">
-          <h3>Budget</h3>
-          <p class="rs-dimension-score" id="dimensionBudgetScore"></p>
-          <p class="rs-dimension-text" id="dimensionBudgetText"></p>
-        </div>
-
-      </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="rs-footer">
-      <div class="rs-footer-inner">
-        <span class="rs-footer-text">
-          Use this snapshot to start meaningful roommate conversations.
-        </span>
-      </div>
-    </footer>
-  </div>
-
-  <script src="script.js" type="module"></script>
+    <script src="script.js"></script>
 </body>
 </html>

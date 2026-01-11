@@ -1,5 +1,3 @@
-.
-
 🏠 Roommate Sync
 
 Smart compatibility matching for stress-free shared living
@@ -123,9 +121,6 @@ LOGIN PAGE:- https://drive.google.com/file/d/1HkqV6DlGnTnEYysWicRRR01G8ihuljfn/v
 QUIZ PAGE:- https://drive.google.com/file/d/1_3rF0wiNK8Ro_H071LCbM--x9I02UU1R/view?usp=sharing   
 
 RESULT PAGE:-https://drive.google.com/file/d/1J4X8MFIR0K2BnucuJumqqoJ_U6OJb77J/view?usp=sharing
-
-
-GitHub automatically renders images inside README.
 
 
 👥 Team – Tech Titans

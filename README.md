@@ -1,5 +1,4 @@
-
-# 🏠 Roommate Sync  
+## 🏠 Roommate Sync  
 Smart Compatibility Matching Before Finding a Place
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -8,7 +7,6 @@ Smart Compatibility Matching Before Finding a Place
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 ![Google](https://img.shields.io/badge/Google%20AI-Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-MVP%20Completed-success?style=for-the-badge)
-```
 
 ---
 
@@ -121,5 +119,17 @@ The platform generates a **compatibility score with clear lifestyle insights**.
 **Team Leader:**
 Samarth Talwar
 
----
+
+
+
+
+
+
+
+
+
+
+
+
+
 

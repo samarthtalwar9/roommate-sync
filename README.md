@@ -117,11 +117,16 @@ The platform generates a **compatibility score with clear lifestyle insights**.
 ## 👥 Team – Tech Titans
 
 **Team :**
+
 Samarth Talwar (Team Leader)
+
 Nakul 
+
 Sampreet
+
 Sudharma
 
+---
 
 
 

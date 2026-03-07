@@ -10,6 +10,7 @@ Smart Compatibility Matching Before Finding a Place
 
 ---
 
+
 ## 🏠 Roommate Sync
 
 **Smart Compatibility Matching Before Finding a Place**
